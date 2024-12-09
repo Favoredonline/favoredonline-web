@@ -90,14 +90,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <footer className="bg-black py-12 mt-16">
-        <div className="text-center text-white">
-          <p className="text-lg md:text-xl">Empowering the future of education and technology.</p>
-          <p className="mt-4 text-sm md:text-base">&copy; {new Date().getFullYear()} Favored Online Inc. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };
