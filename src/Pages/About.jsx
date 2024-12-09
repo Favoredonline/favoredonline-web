@@ -2,69 +2,82 @@ import IMAGE from '../assets/lady.jpg';
 
 const About = () => {
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px', marginBottom: '40px' }}>
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px', marginBottom: '40px', color: '#ffffff' }}>
+      
       {/* Header Section */}
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <p style={{
-          color: '#ffffff',
+      <header style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <h1 style={{
           fontWeight: 'bold',
-          fontSize: '2rem',
+          fontSize: '2.5rem',
           lineHeight: '1.2',
           marginBottom: '20px'
         }}>
           About Favored Online Inc.
-        </p>
+        </h1>
         <p style={{
-          color: '#ffffff',
           fontSize: '1rem',
           lineHeight: '1.8',
           marginTop: '20px'
         }}>
-          <strong>Favored Online Inc.</strong>, founded in July 2018 and originally registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
+          <strong>Favored Online Inc.</strong>, founded in July 2018 by 
+          <a 
+            href="https://www.opeyemitaiwoadeniran.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{ 
+              textDecoration: 'underline', 
+              fontStyle: 'italic', 
+              color: '#D2AE2F', 
+              fontWeight: 'bold' 
+            }}
+          >
+            Opeyemi Adeniran
+          </a> 
+          and registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
           <strong style={{ color: '#D2AE2F' }}> TechTalents City </strong> 
           and 
           <strong style={{ color: '#EB48D5' }}> She Model Tech </strong>, 
           with a commitment to growth and innovation, and plans to introduce more initiatives in the future.
         </p>
-      </div>
+      </header>
 
       {/* Vision and Mission Section */}
-      <div style={{ 
+      <section style={{ 
         display: 'grid', 
-        gridTemplateColumns: '1fr', 
+        gridTemplateColumns: '1fr 1fr', 
         gap: '20px', 
-        color: '#ffffff', 
         marginTop: '40px', 
         marginBottom: '60px' 
       }}>
-        <div style={{ marginBottom: '20px' }}>
-          <p style={{ 
+        <article>
+          <h2 style={{ 
             fontSize: '1.75rem', 
             fontWeight: '600', 
             marginBottom: '15px' 
           }}>
             Our Vision
-          </p>
+          </h2>
           <p style={{ fontSize: '1rem', lineHeight: '1.8' }}>
             To be the global leader in empowering tech professionals through innovative solutions and transformative technologies.
           </p>
-        </div>
-        <div>
-          <p style={{ 
+        </article>
+
+        <article>
+          <h2 style={{ 
             fontSize: '1.75rem', 
             fontWeight: '600', 
             marginBottom: '15px' 
           }}>
             Our Mission
-          </p>
+          </h2>
           <p style={{ fontSize: '1rem', lineHeight: '1.8' }}>
             By developing innovative technologies and solutions, we empower professionals across industries with the skills, tools, and resources needed to excel in a constantly evolving tech-driven world.
           </p>
-        </div>
-      </div>
+        </article>
+      </section>
 
       {/* Founder Section */}
-      <div style={{ 
+      <section style={{ 
         display: 'flex', 
         flexDirection: 'column', 
         gap: '30px', 
@@ -82,7 +95,7 @@ const About = () => {
         }}>
           <img 
             src={IMAGE} 
-            alt="Founder" 
+            alt="Opeyemi Adeniran - Founder of Favored Online Inc." 
             style={{ 
               width: '100%', 
               height: 'auto', 
@@ -90,9 +103,9 @@ const About = () => {
             }} 
           />
         </div>
+
         <div style={{ 
           textAlign: 'center', 
-          color: '#ffffff', 
           maxWidth: '700px' 
         }}>
           <h2 style={{ 
@@ -107,9 +120,9 @@ const About = () => {
             lineHeight: '1.8', 
             marginBottom: '20px' 
           }}>
-            Hello, I'm Opeyemi T. Adeniran, an Author, AI Research Engineer, and the Founder of 
+            Opeyemi T. Adeniran is an Author, AI Research Engineer, and the Founder of 
             <strong style={{ color: '#D2AE2F' }}> TechTalents City</strong>, 
-            <strong style={{ color: '#EB48D5' }}> She Model Tech</strong> and 
+            <strong style={{ color: '#EB48D5' }}> She Model Tech</strong>, and 
             <a 
               href="https://www.morgantechfest.com/" 
               target="_blank" 
@@ -124,7 +137,7 @@ const About = () => {
             </a>.
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
