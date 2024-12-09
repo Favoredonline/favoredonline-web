@@ -29,7 +29,7 @@ const About = () => {
               fontWeight: 'bold' 
             }}
           >
-            Opeyemi Adeniran
+            Opeyemi Taiwo Adeniran
           </a> 
           and registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
           <strong style={{ color: '#D2AE2F' }}> TechTalents City </strong> 
