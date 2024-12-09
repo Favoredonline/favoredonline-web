@@ -3,7 +3,6 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import smt from '../assets/smt.png';
 import ttc from '../assets/ttc.png';
 import backg from '../assets/backg.png';
-import logo from '../assets/logo.png';
 
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +24,6 @@ const Hero = () => {
       {/* Navigation Menu */}
       <nav className="absolute top-0 left-0 w-full z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-          <img src={logo} alt="Logo" className="w-32" />
           <button onClick={toggleMobileMenu} className="md:hidden text-2xl text-white">
             {isMobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -57,6 +55,7 @@ const Hero = () => {
 
       {/* Service Cards */}
       <div className="relative z-10 flex flex-col lg:flex-row justify-center items-center mt-12 pb-16 px-12 xl:px-20 space-y-12 lg:space-y-0 lg:space-x-10">
+        
         {/* Tech Talent City Card */}
         <div className="relative w-full md:w-[600px] lg:w-[440px] h-[320px] group">
           <img 
@@ -91,6 +90,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <footer className="bg-black py-16 mt-16">
+        <div className="text-center text-white">
+          <p className="text-lg md:text-xl">Empowering the future of education and technology.</p>
+          <p className="mt-4 text-sm md:text-base">&copy; {new Date().getFullYear()} Favored Online Inc. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
