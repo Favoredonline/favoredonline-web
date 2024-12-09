@@ -49,7 +49,7 @@ const About = () => {
             <p className="text-lg leading-relaxed">
               Founded by 
               <a 
-                href="https://www.linkedin.com/in/opeyemi-adeniran/" 
+                href="https://www.opeyemitaiwoadeniran.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#D2AE2F] font-bold underline hover:text-[#A18634] transition-colors"
