@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
         <div className="space-x-4 hidden md:block">
           <button className="text-sm bg-[#81bb36] text-white px-6 py-2">
-             <a href="src/Pages/About.jsx" target="_blank">ABOUT</a>
+           <a href="/about" target="_self">ABOUT</a>
           </button>
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
