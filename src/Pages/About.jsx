@@ -80,7 +80,7 @@ const About = () => {
       <header style={headerStyle}>
         <h1 style={titleStyle}>About Favored Online Inc.</h1>
         <p style={paragraphStyle}>
-          <strong>Favored Online Inc.</strong>, founded in July 2018 by 
+          <strong>Favored Online Inc.</strong>, founded in July 2018 by   
           <a 
             href="https://www.opeyemitaiwoadeniran.com/" 
             target="_blank" 
@@ -90,7 +90,7 @@ const About = () => {
              Opeyemi Taiwo Adeniran 
             <span style={underlineStyle}></span>
           </a> 
-           and registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
+            and registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
           <strong style={{ color: '#D2AE2F' }}> TechTalents City </strong> 
           and 
           <strong style={{ color: '#EB48D5' }}> She Model Tech </strong>, 
