@@ -87,7 +87,7 @@ const About = () => {
             rel="noopener noreferrer" 
             style={nameLinkStyle}
           >
-            Opeyemi Taiwo Adeniran
+             Opeyemi Taiwo Adeniran 
             <span style={underlineStyle}></span>
           </a> 
            and registered as Favored Online Skills Acquisition Network in March 2020, serves as the parent holding company for two initiatives: 
