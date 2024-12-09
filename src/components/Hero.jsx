@@ -3,7 +3,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import smt from '../assets/smt.png';
 import ttc from '../assets/ttc.png';
 import backg from '../assets/backg.png';
-import logo from '../assets/logo.png'; 
+import logo from '../assets/logo.png';
 
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,15 +22,10 @@ const Hero = () => {
       className="relative bg-black/50 text-white h-screen bg-center bg-cover"
       style={{ backgroundImage: `url(${backg})` }}
     >
-      {/* Navigation Bar */}
-      <nav className="absolute top-0 left-0 w-full z-20 bg-transparent">
+      {/* Navigation Menu */}
+      <nav className="absolute top-0 left-0 w-full z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
           <img src={logo} alt="Logo" className="w-32" />
-          <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-white hover:text-[#D2AE2F] transition-colors">About</a>
-            <a href="#services" className="text-white hover:text-[#EB48D5] transition-colors">Services</a>
-            <a href="#contact" className="text-white hover:text-[#81bb36] transition-colors">Contact</a>
-          </div>
           <button onClick={toggleMobileMenu} className="md:hidden text-2xl text-white">
             {isMobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -50,7 +45,7 @@ const Hero = () => {
 
       {/* Hero Section */}
       <div className="relative z-10 max-w-7xl mx-auto text-center pt-32 pb-20">
-        <h1 className="font-bold tracking-tight text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="font-extrabold tracking-tight text-4xl md:text-5xl lg:text-6xl">
           Advancing Education Through <br />
           <span className="text-[#EB48D5]">Innovative Solutions</span> and{' '}
           <span className="text-[#D2AE2F]">Technologies</span>
@@ -60,7 +55,7 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Services Section */}
+      {/* Service Cards */}
       <div className="relative z-10 flex flex-col lg:flex-row justify-center items-center mt-12 pb-16 px-12 xl:px-20 space-y-12 lg:space-y-0 lg:space-x-10">
         {/* Tech Talent City Card */}
         <div className="relative w-full md:w-[600px] lg:w-[440px] h-[320px] group">
