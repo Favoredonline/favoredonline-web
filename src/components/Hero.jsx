@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative bg-black/50 text-white h-screen bg-center bg-cover"
+      className="relative bg-black/50 text-white min-h-screen bg-center bg-cover"
       style={{ backgroundImage: `url(${backg})` }}
     >
       {/* Navigation Menu */}
@@ -92,7 +92,7 @@ const Hero = () => {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-black py-16 mt-16">
+      <footer className="bg-black py-12 mt-16">
         <div className="text-center text-white">
           <p className="text-lg md:text-xl">Empowering the future of education and technology.</p>
           <p className="mt-4 text-sm md:text-base">&copy; {new Date().getFullYear()} Favored Online Inc. All rights reserved.</p>
