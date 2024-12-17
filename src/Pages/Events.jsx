@@ -1,10 +1,10 @@
 import IMAGE from '../assets/lady.jpg';
 
-const About = () => {
+const Events = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
       
-      {/* About Section */}
+      {/* Events Section */}
       <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
         <div className="text-center">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-8">About Favored Online Tech Events</h1>
@@ -113,3 +113,4 @@ const About = () => {
   );
 }
 
+export default Events;
