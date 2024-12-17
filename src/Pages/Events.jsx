@@ -1,118 +1,69 @@
-import React from 'react';
-import IMAGE from '../assets/lady.jpg'; // Corrected the import syntax
+import IMAGE from '../assets/lady.jpg';
 
-const Events = () => {
+const About = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
       
-      {/* Events Section */}
+      {/* About Section */}
       <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
         <div className="text-center">
-          <h1 className="text-4xl lg:text-5xl font-extrabold mb-8">About Favored Online Tech Events</h1>
+          <h1 className="text-4xl lg:text-5xl font-extrabold mb-8">About Favored Online</h1>
           <p className="text-xl md:text-2xl leading-relaxed mx-auto max-w-3xl">
-            <strong>Favored Online Inc.</strong> proudly hosts two premier tech events:
-            <strong className="text-[#D2AE2F]"> She Model Tech Summit </strong> 
+            <strong>Favored Online Inc.</strong> serves as the parent holding company for two key initiatives: 
+            <strong className="text-[#D2AE2F]"> TechTalents City </strong> 
             and 
-            <strong className="text-[#EB48D5]"> Favored Online iTech.</strong> 
-            These events are designed to showcase innovation, foster networking, and empower tech talent.
+            <strong className="text-[#EB48D5]"> She Model Tech.</strong> 
+            These initiatives are focused on innovation, education, and empowerment.
           </p>
         </div>
       </section>
 
-      {/* Event Highlights Section */}
+      {/* Mission and Vision Section */}
       <section className="grid md:grid-cols-2 gap-8 md:gap-5 lg:gap-10 my-16">
         <div className="bg-white text-black p-8 rounded-2xl shadow-lg">
-          <h2 className="text-3xl text-[#D2AE2F] font-bold mb-5">Event Highlights</h2>
-          <ul className="list-disc list-inside space-y-4 text-lg leading-relaxed">
-            <li>Dynamic Keynote Speeches</li>
-            <li>Expert Panel Discussions</li>
-            <li>Interactive Tech Talks</li>
-            <li>Project Showcase through TechTalents City</li>
-            <li>Job Fair with top industry recruiters</li>
-            <li>Award for Innovation among Participants</li>
-          </ul>
+          <h2 className="text-3xl text-[#D2AE2F] font-bold mb-5">Our Mission</h2>
+          <p className="text-lg leading-relaxed">
+            Our mission is to continuously develop solutions and technologies that advance education, empowering innovators and professionals to learn, grow, and create transformative technologies for a better world.
+          </p>
         </div>
         <div className="bg-white text-black p-8 rounded-2xl shadow-lg">
-          <h2 className="text-3xl text-[#EB48D5] font-bold mb-5">Why Attend?</h2>
+          <h2 className="text-3xl text-[#EB48D5] font-bold mb-5">Our Vision</h2>
           <p className="text-lg leading-relaxed">
-            Join industry leaders, aspiring innovators, and tech enthusiasts to explore the latest in technology, connect with hiring companies, and showcase your skills. Gain access to workshops, networking sessions, and competitions designed to inspire and empower.
+            Our vision is to develop educational technologies that empower innovators and professionals to unlock their full potential.
           </p>
         </div>
       </section>
 
-      {/* Speakers Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-10">Featured Speakers</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Industry experts, thought leaders, and changemakers from across the globe will be sharing insights and trends at the She Model Tech Summit and Favored Online iTech.
-          </p>
+      {/* Meet Our Founder Section */}
+      <section className="bg-gray-900 py-20">
+        <div className="flex flex-col md:flex-row items-center gap-10 lg:mx-20">
+          <div className="md:w-1/2 lg:w-1/3 shrink-0">
+            <img 
+              src={IMAGE} 
+              alt="Founder of Favored Online Inc." 
+              className="w-full h-auto max-h-[400px] md:max-h-[500px] object-cover object-center rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="text-white flex flex-col justify-center">
+            <h2 className="text-4xl font-extrabold mb-6">Meet Our Founder</h2>
+            <p className="text-lg leading-relaxed">
+              Founded by 
+              <a 
+                href="https://www.opeyemitaiwoadeniran.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#D2AE2F] font-bold underline hover:text-[#A18634] transition-colors"
+              >
+                Opeyemi T. Adeniran
+              </a>, 
+              in July 2018, and originally registered as Favored Online Skills Acquisition Network in March 2020, 
+              the company was rebranded and officially incorporated as Favored Online Inc. in Delaware, USA, in August 2024.
+            </p>
+          </div>
         </div>
-      </section>
-
-      {/* Sponsorship & Partnership Section */}
-      <section className="py-20 bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold">Sponsorship & Partnership Packages</h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Package Cards Here */}
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="bg-white py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold">Gallery</h2>
-          <p className="text-lg leading-relaxed">Relive moments from previous events and see what's in store for the future.</p>
-        </div>
-        {/* Image gallery grid */}
-        <img src={IMAGE} alt="Lady attending event" className="mx-auto rounded-xl shadow-md" />
-      </section>
-
-      {/* Sponsors & Partners Section */}
-      <section className="bg-gray-900 py-20 text-white">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold">Our Sponsors & Partners</h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Sponsor / Partner Logos */}
-        </div>
-      </section>
-
-      {/* Dates & Location Section */}
-      <section className="py-20 bg-gradient-to-r from-[#203A43] via-[#2C5364] to-[#0F2027] text-white">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold">Dates, Location & Time</h2>
-          <p className="text-lg leading-relaxed mt-5">Mark your calendars for these transformative events. Full event schedules will be available soon.</p>
-        </div>
-      </section>
-
-      {/* Project Upload Section */}
-      <section className="bg-white py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold">Upload Your Projects / Resume</h2>
-        </div>
-        {/* Upload Form */}
-      </section>
-
-      {/* Programs Section */}
-      <section className="py-20 bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold">Programs</h2>
-        </div>
-      </section>
-
-      {/* Yearly Calendar Section */}
-      <section className="bg-white py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold">Yearly Calendar</h2>
-          <p className="text-lg leading-relaxed">View the full schedule for both She Model Tech Summit and Favored Online iTech.</p>
-        </div>
-        {/* Calendar component */}
       </section>
     </div>
   );
 }
 
-export default Events;
+export default About;
