@@ -1,4 +1,5 @@
-import IMAGE from '../assets/lady.jpg';
+import React from 'react';
+import IMAGE from '../assets/lady.jpg'; // Corrected the import syntax
 
 const Events = () => {
   return (
@@ -66,6 +67,7 @@ const Events = () => {
           <p className="text-lg leading-relaxed">Relive moments from previous events and see what's in store for the future.</p>
         </div>
         {/* Image gallery grid */}
+        <img src={IMAGE} alt="Lady attending event" className="mx-auto rounded-xl shadow-md" />
       </section>
 
       {/* Sponsors & Partners Section */}
