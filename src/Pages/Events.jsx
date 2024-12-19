@@ -1,5 +1,5 @@
 import IMAGE from '../assets/lady.jpg';
-import LOGO from '../assets/logo-placeholder.png';
+import LOGO from '../assets/logo.png';
 
 const Events = () => {
   return (
