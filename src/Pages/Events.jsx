@@ -39,43 +39,35 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Featured Speakers Section */}
-      <section className="bg-gray-900 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-white mb-6">Featured Speakers</h2>
-        </div>
-        <div className="carousel flex overflow-x-auto gap-6 px-8 lg:px-20">
-          {[...Array(8)].map((_, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <img 
-                src={IMAGE} 
-                alt={`Speaker ${index + 1}`} 
-                className="w-32 h-32 mx-auto rounded-full mb-6 object-cover object-center shadow-md"
-              />
-              <h3 className="text-2xl font-bold mb-3">Speaker {index + 1}</h3>
-              <p className="text-lg leading-relaxed">Industry Leader in Tech</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* She Model Tech Summit Section */}
       <section className="bg-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">She Model Tech Summit</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>Details, Speakers, Calendar, Panel, Programs, Location, Date, Gallery</div>
+          <p className="text-lg leading-relaxed mx-auto max-w-3xl">
+            The She Model Tech Summit is designed to inspire and empower women in technology. Join us to explore impactful discussions, exciting panels, and dynamic programs that spotlight innovation and creativity.
+          </p>
+          <a 
+            href="#shemodeltech" 
+            className="mt-6 inline-block bg-[#EB48D5] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:bg-[#C037A9] transition-colors"
+          >
+            Learn More
+          </a>
         </div>
       </section>
 
       {/* TechTalents City Conference Section */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-100 py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">TechTalents City Conference</h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>Details, Speakers, Calendar, Panel, Programs, Location, Date, Gallery, Project Showcase, Award for Innovation, Project Upload/Resume, Job Fair</div>
+          <p className="text-lg leading-relaxed mx-auto max-w-3xl">
+            The TechTalents City Conference is the hub of innovation and collaboration. Dive into sessions on cutting-edge technology, network with experts, and showcase your projects in a vibrant environment.
+          </p>
+          <a 
+            href="#techtalentscity" 
+            className="mt-6 inline-block bg-[#D2AE2F] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:bg-[#A18634] transition-colors"
+          >
+            Learn More
+          </a>
         </div>
       </section>
 
@@ -88,4 +80,3 @@ const Events = () => {
 }
 
 export default Events;
-
