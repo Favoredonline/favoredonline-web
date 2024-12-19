@@ -50,6 +50,32 @@ const Conference = () => {
         </div>
       </section>
 
+          {/* Gallery Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
+          <p className="text-lg text-gray-600">Explore moments from our past events through our exclusive photo gallery.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+            <img 
+              key={index} 
+              src={IMAGE} 
+              alt={`Gallery Image ${index + 1}`} 
+              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+            />
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <a 
+            href="#gallery" 
+            className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
+            View Full Gallery
+          </a>
+        </div>
+      </section>
+
       {/* Register Section */}
       <section className="bg-gradient-to-r from-[#A18634] to-[#D2AE2F] text-white py-20">
         <div className="text-center">
