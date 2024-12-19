@@ -11,7 +11,7 @@ const Sponsors = () => {
           <div className="text-center md:text-left">
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Partner with Us</h1>
             <p className="text-xl md:text-2xl leading-relaxed max-w-xl mx-auto md:mx-0">
-             Join us in driving change, empowering excellence, and shaping the future of technology. 
+              Join us in driving change, empowering excellence, and shaping the future of technology. 
               Support the <strong className="text-[#D2AE2F]">She Model Tech Summit</strong> and the <strong className="text-[#EB48D5]">TechTalents City Conference</strong> where visionaries, innovators, and changemakers come together to create lasting impact.
             </p>
             <div className="mt-6">
@@ -34,7 +34,10 @@ const Sponsors = () => {
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Sponsorship Opportunities</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        Fuel innovation, empower women, and support emerging tech talent by sponsoring the She Model Tech Summit and TechTalents City Conference, positioning your brand as a force for excellence with exclusive access to industry experts, changemakers, and unparalleled brand influence, thought leadership, and recruitment opportunities.
+            Fuel innovation, empower women, and support emerging tech talent by sponsoring the She Model Tech Summit and TechTalents City Conference, 
+            positioning your brand as a force for excellence with exclusive access to industry experts, changemakers, and unparalleled brand influence, 
+            thought leadership, and recruitment opportunities.
+          </p> 
         </div>
         <div className="flex justify-center mt-8">
           <a 
