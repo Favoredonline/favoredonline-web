@@ -53,7 +53,7 @@ const Events = () => {
           </div>
         </div>
 
-        <div id="smt-carousel" className="carousel flex overflow-x-auto gap-6 px-4 mt-10">
+        <div id="smt-carousel" className="carousel flex justify-center overflow-x-auto gap-6 px-4 mt-10">
           {[...Array(6)].map((_, index) => (
             <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
               <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
@@ -100,7 +100,7 @@ const Events = () => {
           </div>
         </div>
 
-        <div id="ttc-carousel" className="carousel flex overflow-x-auto gap-6 px-4 mt-10">
+        <div id="ttc-carousel" className="carousel flex justify-center overflow-x-auto gap-6 px-4 mt-10">
           {[...Array(6)].map((_, index) => (
             <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
               <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
