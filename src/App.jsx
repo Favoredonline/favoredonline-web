@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import About from './Pages/About'
+import About from './Pages/Events'
 import Footer from './components/Footer'
 
 function App() {
