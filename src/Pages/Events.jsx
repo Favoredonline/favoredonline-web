@@ -26,8 +26,7 @@ const Events = () => {
           </div>
         </div>
       </section>
-
-      {/* She Model Tech Summit Section */}
+           {/* She Model Tech Summit Section */}
       <section className="bg-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">She Model Tech Summit</h2>
@@ -53,14 +52,29 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
-              <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
-              <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
-              <p className="text-center text-xs text-gray-500">Panel</p>
-            </div>
-          ))}
+        <div className="relative mt-10 px-4">
+          <FaChevronLeft
+            onClick={() => scrollCarousel('left', 'smt-carousel')}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-800 cursor-pointer"
+            size={24}
+          />
+          <div
+            id="smt-carousel"
+            className="carousel flex overflow-x-auto gap-6 px-4"
+          >
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
+                <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
+                <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
+                <p className="text-center text-xs text-gray-500">Panel</p>
+              </div>
+            ))}
+          </div>
+          <FaChevronRight
+            onClick={() => scrollCarousel('right', 'smt-carousel')}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-800 cursor-pointer"
+            size={24}
+          />
         </div>
 
         <div className="text-center mt-8">
@@ -74,6 +88,7 @@ const Events = () => {
       </section>
 
 
+    
       {/* TechTalents City Conference Section */}
       <section className="bg-gray-50 py-20">
         <div className="text-center mb-10">
