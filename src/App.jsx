@@ -4,7 +4,6 @@ import Home from './Pages/Home'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import About from './Pages/About'
-import About from './Pages/Events'
 import Footer from './components/Footer'
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/events' element={<Events />} />
         </Routes>
         <Footer />
       </BrowserRouter>
