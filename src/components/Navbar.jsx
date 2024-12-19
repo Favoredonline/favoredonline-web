@@ -32,7 +32,7 @@ const Navbar = () => {
               Conference
             </Link>
           </button>
-          <button className="text-sm bg-[#007BFF] text-white px-6 py-2">
+          <button className="text-sm bg-[#0F2027] text-white px-6 py-2">
             <Link to={"/sponsors"} className="font-medium text-white uppercase text-sm">
               Sponsors
             </Link>
@@ -62,14 +62,14 @@ const Navbar = () => {
               Summit
             </Link>
           </button>
-          <button className="text-sm bg-[#007BFF] text-white px-10 py-2 mb-4">
-            <Link to={"/sponsors"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
-              Sponsors
-            </Link>
-          </button>
           <button className="text-sm bg-[#D2AE2F] text-white px-10 py-2 mb-4">
             <Link to={"/conference"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               Conference
+            </Link>
+          </button>
+          <button className="text-sm bg-[#0F2027] text-white px-10 py-2 mb-4">
+            <Link to={"/sponsors"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
+              Sponsors
             </Link>
           </button>
         </div>
