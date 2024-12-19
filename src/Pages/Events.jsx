@@ -11,7 +11,7 @@ const Events = () => {
           <div className="text-center md:text-left">
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Welcome to Favored Online Tech Events</h1>
             <p className="text-xl md:text-2xl leading-relaxed max-w-xl mx-auto md:mx-0">
-              Experience the <strong className="text-[#D2AE2F]">She Model Tech Summit</strong> and the <strong className="text-[#EB48D5]">TechTalents City Conference</strong>, where technology, innovation, and collaboration take center stage.
+              Experience the <strong className="text-[#D2AE2F]">She Model Tech Summit</strong> and the <strong className="text-[#EB48D5]">TechTalents City Conference</strong>, where innovation, empowerment, and opportunity collide to shape the future of technology..
             </p>
             <a 
               href="#register" 
