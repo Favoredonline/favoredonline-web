@@ -88,54 +88,67 @@ const Events = () => {
         </div>
       </section>
 
-
-    
       {/* TechTalents City Conference Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">TechTalents City Conference</h2>
-          <p className="text-lg leading-relaxed text-gray-600 mx-auto max-w-3xl">
-            The TechTalents City Conference is the hub for innovation, collaboration, and growth. Explore sessions on emerging technologies, showcase your projects, and connect with industry leaders.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 px-4">
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Key Highlights</h3>
-            <ul className="text-lg text-gray-600 list-disc list-inside">
-              <li>Cutting-edge Technology Discussions</li>
-              <li>Project Showcases</li>
-              <li>Award for Innovation</li>
-              <li>Job Fair</li>
-            </ul>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Details</h3>
-            <p className="text-lg text-gray-600">
-              <strong>Date:</strong> June 15-17, 2025<br />
-              <strong>Location:</strong> Nairobi, Kenya
-            </p>
-          </div>
-        </div>
+<section className="bg-gray-50 py-20">
+  <div className="text-center mb-10">
+    <h2 className="text-4xl font-extrabold text-gray-800 mb-6">TechTalents City Conference</h2>
+    <p className="text-lg leading-relaxed text-gray-600 mx-auto max-w-3xl">
+      The TechTalents City Conference is the hub for innovation, collaboration, and growth. Explore sessions on emerging technologies, showcase your projects, and connect with industry leaders.
+    </p>
+  </div>
+  <div className="grid md:grid-cols-2 gap-8 px-4">
+    <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <h3 className="text-2xl font-bold text-gray-800 mb-4">Key Highlights</h3>
+      <ul className="text-lg text-gray-600 list-disc list-inside">
+        <li>Cutting-edge Technology Discussions</li>
+        <li>Project Showcases</li>
+        <li>Award for Innovation</li>
+        <li>Job Fair</li>
+      </ul>
+    </div>
+    <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Details</h3>
+      <p className="text-lg text-gray-600">
+        <strong>Date:</strong> June 15-17, 2025<br />
+        <strong>Location:</strong> Nairobi, Kenya
+      </p>
+    </div>
+  </div>
 
-        <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
-              <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
-              <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
-              <p className="text-center text-xs text-gray-500">Speaker</p>
-            </div>
-          ))}
+  <div className="relative mt-10 px-4">
+    <button
+      onClick={() => document.getElementById('ttc-carousel').scrollBy({ left: -300, behavior: 'smooth' })}
+      className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-gray-800 rounded-full w-8 h-8 flex items-center justify-center"
+    >
+      &#8249;
+    </button>
+    <div id="ttc-carousel" className="carousel flex overflow-x-auto gap-6 px-4">
+      {[...Array(6)].map((_, index) => (
+        <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
+          <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
+          <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
+          <p className="text-center text-xs text-gray-500">Speaker</p>
         </div>
+      ))}
+    </div>
+    <button
+      onClick={() => document.getElementById('ttc-carousel').scrollBy({ left: 300, behavior: 'smooth' })}
+      className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-gray-800 rounded-full w-8 h-8 flex items-center justify-center"
+    >
+      &#8250;
+    </button>
+  </div>
 
-        <div className="text-center mt-8">
-          <a 
-            href="#techtalentscity" 
-            className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            Learn More
-          </a>
-        </div>
-      </section>
+  <div className="text-center mt-8">
+    <a 
+      href="#techtalentscity" 
+      className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+    >
+      Learn More
+    </a>
+  </div>
+</section>
+
 
       {/* Sponsorship Package Section */}
         <section className="bg-gradient-to-r from-[#F9F9F9] to-[#ECECEC] py-20">
