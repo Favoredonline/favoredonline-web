@@ -182,7 +182,23 @@ const Events = () => {
           </a>
         </div>
       </section>
-    </div>
+      
+      {/* Register Section */}
+     <section className="bg-gray-900 py-20">
+     <div className="text-center text-white">
+     <h2 className="text-4xl font-extrabold mb-6">Register Now</h2>
+     <p className="text-lg mb-8 max-w-3xl mx-auto">
+      Choose the event you want to attend and secure your spot today. Whether it's the She Model Tech Summit or the TechTalents City Conference, you're just a step away from being part of a transformative experience.
+     </p>
+    <a 
+      href="#register" 
+      className="inline-block bg-gradient-to-r from-[#EB48D5] to-[#C037A9] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+    >
+      Register for an Event
+    </a>
+  </div>
+ </section>
+</div>
   );
 }
 
