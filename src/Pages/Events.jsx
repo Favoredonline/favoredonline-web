@@ -1,4 +1,4 @@
-import IMAGE from '../assets/lady.jpg';
+import IMAGE from '../assets/smt.png';
 import LOGO from '../assets/logo.png';
 
 const Events = () => {
