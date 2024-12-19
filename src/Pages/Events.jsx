@@ -1,6 +1,7 @@
 import IMAGE from '../assets/smt.png';
 import LOGO from '../assets/logo.png';
 import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const Events = () => {
   return (
