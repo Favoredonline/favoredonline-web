@@ -1,5 +1,6 @@
 import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
 
+
 const Summit = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
