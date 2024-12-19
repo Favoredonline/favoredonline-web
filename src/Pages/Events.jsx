@@ -31,7 +31,7 @@ const Events = () => {
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">She Model Tech Summit</h2>
           <p className="text-lg leading-relaxed text-gray-600 mx-auto max-w-3xl">
-            The She Model Tech Summit is designed to inspire and empower women in technology. Join us for insightful panels, programs, and networking opportunities that celebrate innovation and creativity.
+           The She Model Tech Summit is a transformative event dedicated to inspiring, equipping, and empowering women to become trailblazers and leaders in technology. This summit serves as a platform for women to hone their leadership skills, amplify their voices, and access the resources and networks they need to lead and thrive in the tech industry
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 px-4">
