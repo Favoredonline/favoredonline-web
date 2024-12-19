@@ -9,7 +9,7 @@ const Sponsors = () => {
       <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
           <div className="text-center md:text-left">
-            <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Partner with Us</h1>
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Be the Catalyst for Innovation</h1>
             <p className="text-xl md:text-2xl leading-relaxed max-w-xl mx-auto md:mx-0">
               Join us in driving change, empowering excellence, and shaping the future of technology. 
               Support the <strong className="text-[#D2AE2F]">She Model Tech Summit</strong> and the <strong className="text-[#EB48D5]">TechTalents City Conference</strong> where visionaries, innovators, and changemakers come together to create lasting impact.
@@ -32,7 +32,7 @@ const Sponsors = () => {
       {/* Sponsorship Package Section */}
       <section className="bg-gradient-to-r from-[#F9F9F9] to-[#ECECEC] py-20">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Sponsorship Opportunities</h2>
+          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Fuel Innovation, Amplify Your Brand</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Fuel innovation, empower women, and support emerging tech talent by sponsoring the She Model Tech Summit and TechTalents City Conference, 
             positioning your brand as a force for excellence with exclusive access to industry experts, changemakers, and unparalleled brand influence, 
