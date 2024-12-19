@@ -1,29 +1,29 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from './Pages/Home'
-import ScrollToTop from './components/ScrollToTop'
-import Navbar from './components/Navbar'
-import About from './Pages/About' // Keep this as About
-import Events from './Pages/Events' // Rename this to Events
-import Events from './Pages/Summit' // Rename this to Events
-import Footer from './components/Footer'
+import Home from './Pages/Home';
+import ScrollToTop from './components/ScrollToTop';
+import Navbar from './components/Navbar';
+import About from './Pages/About';
+import Events from './Pages/Events'; // Keep Events for the Events page
+import Summit from './Pages/Summit'; // Correctly import Summit
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='bg-[#1a1a1a] min-h-screen'>
+    <div className="bg-[#1a1a1a] min-h-screen">
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/events' element={<Events />} /> {/* Update here */}
-          <Route path='/summit' element={<Summit />} /> {/* Update here */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} /> {/* Events page */}
+          <Route path="/summit" element={<Summit />} /> {/* Summit page */}
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
