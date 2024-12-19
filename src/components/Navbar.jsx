@@ -53,6 +53,9 @@ const Navbar = () => {
           <button className="text-sm bg-[#007BFF] text-white px-10 py-2  mb-4">
           <Link to={'/events'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>Event</Link>
           </button>
+            <button className="text-sm bg-[#007BFF] text-white px-10 py-2  mb-4">
+          <Link to={'/summit'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>Summit</Link>
+          </button>
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2 mb-4">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
           </button>
