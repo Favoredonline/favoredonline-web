@@ -1,4 +1,5 @@
 import IMAGE from '../assets/lady.jpg';
+import LOGO from '../assets/logo-placeholder.png';
 
 const Events = () => {
   return (
@@ -22,56 +23,6 @@ const Events = () => {
           <div>
             <img src={IMAGE} alt="Event Illustration" className="rounded-xl shadow-lg" />
           </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
-          <p className="text-lg text-gray-600">Explore moments from our past events through our exclusive photo gallery.</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-            <img 
-              key={index} 
-              src={IMAGE} 
-              alt={`Gallery Image ${index + 1}`} 
-              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
-            />
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <a 
-            href="#gallery" 
-            className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            View Full Gallery
-          </a>
-        </div>
-      </section>
-
-      {/* Sponsorship & Partnership Section */}
-      <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-white mb-6">Sponsorship & Partnership</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Partner with us to make a lasting impact. Access our sponsorship and partnership packages to explore how we can work together to achieve greatness.
-          </p>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center gap-6">
-          <a 
-            href="#sponsorship" 
-            className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            Sponsorship Packages
-          </a>
-          <a 
-            href="#partnership" 
-            className="bg-gradient-to-r from-[#EB48D5] to-[#C037A9] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            Partnership Packages
-          </a>
         </div>
       </section>
 
@@ -142,6 +93,50 @@ const Events = () => {
             className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
             Learn More
+          </a>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="bg-white py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold mb-6">Our Sponsors</h2>
+          <p className="text-lg text-gray-600">We are proud to be supported by leading organizations driving innovation and excellence.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4">
+          {[...Array(8)].map((_, index) => (
+            <img 
+              key={index} 
+              src={LOGO} 
+              alt={`Sponsor Logo ${index + 1}`} 
+              className="w-full h-20 object-contain rounded-lg shadow-md hover:scale-105 transition-transform"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
+          <p className="text-lg text-gray-600">Explore moments from our past events through our exclusive photo gallery.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+            <img 
+              key={index} 
+              src={IMAGE} 
+              alt={`Gallery Image ${index + 1}`} 
+              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+            />
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <a 
+            href="#gallery" 
+            className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
+            View Full Gallery
           </a>
         </div>
       </section>
