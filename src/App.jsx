@@ -4,9 +4,9 @@ import Home from './Pages/Home';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import About from './Pages/About';
-import Events from './Pages/Events';
 import Summit from './Pages/Summit'; // Import Summit correctly
 import Conference from './Pages/Conference'; // Import Conference correctly
+import Events from './Pages/Sponsors';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} /> {/* Events page */}
           <Route path="/summit" element={<Summit />} /> {/* Summit page */}
           <Route path="/conference" element={<Conference />} /> {/* Conference page */}
+          <Route path="/sponsors" element={<Sponsors />} /> {/* Sponsors page */}
         </Routes>
         <Footer />
       </BrowserRouter>
