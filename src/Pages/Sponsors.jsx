@@ -72,7 +72,7 @@ const Sponsors = () => {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Join Our Mission</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            Your support can make a lasting impact. Partner with us to drive innovation, empower communities, and shape the future of technology together.
+            Empower dreams, open doors, and shape the future of technology by providing women in tech, emerging talents, and future leaders with transformative opportunities to lead, create, and thrive.
           </p>
           <a 
             href="#sponsorship" 
