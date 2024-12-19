@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import About from './Pages/About';
 import Summit from './Pages/Summit'; // Import Summit correctly
 import Conference from './Pages/Conference'; // Import Conference correctly
-import Events from './Pages/Sponsors';
+import Sponsors from './Pages/Sponsors'; // Import Sponsors correctly
 import Footer from './components/Footer';
 
 function App() {
