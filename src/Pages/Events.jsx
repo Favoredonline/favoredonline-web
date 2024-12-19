@@ -1,5 +1,6 @@
 import IMAGE from '../assets/smt.png';
 import LOGO from '../assets/logo.png';
+import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
 
 const Events = () => {
   return (
