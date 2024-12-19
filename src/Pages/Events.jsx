@@ -121,23 +121,24 @@ const Events = () => {
         </div>
       </section>
 
-       {/* Sponsorship Package Section */}
-      <section className="bg-gradient-to-r from-gray-100 to-gray-50 py-20">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Sponsorship Package</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Support our events and be part of the future of technology. Explore our sponsorship packages to see how you can contribute to these transformative experiences while enhancing your brand's visibility.
-          </p>
-        </div>
-        <div className="flex justify-center mt-8">
-          <a 
-            href="#sponsorship" 
-            className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            View Sponsorship Package
-          </a>
-        </div>
-      </section>
+      {/* Sponsorship Package Section */}
+        <section className="bg-gradient-to-r from-[#F9F9F9] to-[#ECECEC] py-20">
+         <div className="text-center mb-10">
+         <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Sponsorship Package</h2>
+         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+      Support our events and be part of the future of technology. Explore our sponsorship packages to see how you can contribute to these transformative experiences while enhancing your brand's visibility.
+        </p>
+      </div>
+     <div className="flex justify-center mt-8">
+      <a 
+      href="#sponsorship" 
+      className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+    >
+      View Sponsorship Package
+    </a>
+  </div>
+</section>
+
 
       {/* Sponsors Section */}
       <section className="bg-white py-20">
