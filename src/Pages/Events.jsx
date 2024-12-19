@@ -26,12 +26,12 @@ const Events = () => {
         </div>
       </section>
 
-      {/* She Model Tech Summit Section */}
+       {/* She Model Tech Summit Section */}
       <section className="bg-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">She Model Tech Summit</h2>
           <p className="text-lg leading-relaxed text-gray-600 mx-auto max-w-3xl">
-           The She Model Tech Summit is a transformative event dedicated to inspiring, equipping, and empowering women to become trailblazers and leaders in technology. This summit serves as a platform for women to hone their leadership skills, amplify their voices, and access the resources and networks they need to lead and thrive in the tech industry
+            The She Model Tech Summit is a transformative event dedicated to inspiring, equipping, and empowering women to become trailblazers and leaders in technology. This summit serves as a platform for women to hone their leadership skills, amplify their voices, and access the resources and networks they need to lead and thrive in the tech industry.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 px-4">
@@ -51,6 +51,13 @@ const Events = () => {
             </p>
           </div>
         </div>
+
+        <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
+          {[...Array(6)].map((_, index) => (
+            <div key={index} className="w-40 h-40 bg-gray-200 rounded-full shadow-md flex-shrink-0"></div>
+          ))}
+        </div>
+
         <div className="text-center mt-8">
           <a 
             href="#shemodeltech" 
@@ -87,12 +94,35 @@ const Events = () => {
             </p>
           </div>
         </div>
+
+        <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
+          {[...Array(6)].map((_, index) => (
+            <div key={index} className="w-40 h-40 bg-gray-200 rounded-full shadow-md flex-shrink-0"></div>
+          ))}
+        </div>
+
         <div className="text-center mt-8">
           <a 
             href="#techtalentscity" 
             className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
             Learn More
+          </a>
+        </div>
+      </section>
+
+       {/* Sponsorship Package Section */}
+      <section className="bg-white py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold mb-6">Sponsorship Package</h2>
+          <p className="text-lg text-gray-600">Support our events and be part of the future of technology. View our sponsorship packages and see how you can contribute to these transformative experiences.</p>
+        </div>
+        <div className="text-center mt-8">
+          <a 
+            href="#sponsorship" 
+            className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
+            View Sponsorship Package
           </a>
         </div>
       </section>
