@@ -1,7 +1,7 @@
 import IMAGE from '../assets/smt.png';
 import LOGO from '../assets/logo.png';
 
-const Events = () => {
+const Sponsors = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
       
@@ -83,4 +83,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Sponsors;
