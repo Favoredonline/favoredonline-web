@@ -27,7 +27,7 @@ const Events = () => {
         </div>
       </section>
 
-       {/* She Model Tech Summit Section */}
+      {/* She Model Tech Summit Section */}
       <section className="bg-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">She Model Tech Summit</h2>
@@ -55,7 +55,11 @@ const Events = () => {
 
         <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
           {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-40 h-40 bg-gray-200 rounded-full shadow-md flex-shrink-0"></div>
+            <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
+              <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
+              <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
+              <p className="text-center text-xs text-gray-500">Panel</p>
+            </div>
           ))}
         </div>
 
@@ -68,6 +72,7 @@ const Events = () => {
           </a>
         </div>
       </section>
+
 
       {/* TechTalents City Conference Section */}
       <section className="bg-gray-50 py-20">
@@ -98,7 +103,11 @@ const Events = () => {
 
         <div className="carousel mt-10 flex overflow-x-auto gap-6 px-4">
           {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-40 h-40 bg-gray-200 rounded-full shadow-md flex-shrink-0"></div>
+            <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
+              <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
+              <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
+              <p className="text-center text-xs text-gray-500">Speaker</p>
+            </div>
           ))}
         </div>
 
@@ -113,15 +122,17 @@ const Events = () => {
       </section>
 
        {/* Sponsorship Package Section */}
-      <section className="bg-white py-20">
+      <section className="bg-gradient-to-r from-gray-100 to-gray-50 py-20">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold mb-6">Sponsorship Package</h2>
-          <p className="text-lg text-gray-600">Support our events and be part of the future of technology. View our sponsorship packages and see how you can contribute to these transformative experiences.</p>
+          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Sponsorship Package</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Support our events and be part of the future of technology. Explore our sponsorship packages to see how you can contribute to these transformative experiences while enhancing your brand's visibility.
+          </p>
         </div>
-        <div className="text-center mt-8">
+        <div className="flex justify-center mt-8">
           <a 
             href="#sponsorship" 
-            className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+            className="inline-block bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-black text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
             View Sponsorship Package
           </a>
