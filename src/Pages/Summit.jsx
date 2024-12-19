@@ -1,5 +1,5 @@
 import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
-
+import IMAGE from '../assets/smt.png';
 
 const Summit = () => {
   return (
