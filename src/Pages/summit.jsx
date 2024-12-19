@@ -1,4 +1,4 @@
-import SPEAKER_PLACEHOLDER from '../assets/speaker-placeholder.png';
+import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
 
 const Summit = () => {
   return (
