@@ -20,6 +20,9 @@ const Navbar = () => {
           <button className="text-sm bg-[#81bb36] text-white px-6 py-2">
             <Link to={'/about'} className="font-medium text-white uppercase text-sm">About US</Link>
           </button>  
+            <button className="text-sm bg-[#007BFF] text-white px-6 py-2">
+            <Link to={'/events'} className="font-medium text-white uppercase text-sm">Event</Link>
+          </button>  
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
           </button>
@@ -43,6 +46,9 @@ const Navbar = () => {
           </div>
           <button className="text-sm bg-[#81bb36] text-white px-10 py-2  mb-4">
           <Link to={'/about'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>About US</Link>
+          </button>
+          <button className="text-sm bg-[#007BFF] text-white px-10 py-2  mb-4">
+          <Link to={'/events'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>Event</Link>
           </button>
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2 mb-4">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
