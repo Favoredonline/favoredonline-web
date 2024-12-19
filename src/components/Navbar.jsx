@@ -26,6 +26,10 @@ const Navbar = () => {
             <button className="text-sm bg-[#007BFF] text-white px-6 py-2">
             <Link to={'/summit'} className="font-medium text-white uppercase text-sm">Summit</Link>
           </button>  
+            </button>  
+            <button className="text-sm bg-[#007BFF] text-white px-6 py-2">
+            <Link to={'/conference'} className="font-medium text-white uppercase text-sm">Conference</Link>
+          </button>  
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
           </button>
@@ -55,6 +59,9 @@ const Navbar = () => {
           </button>
             <button className="text-sm bg-[#007BFF] text-white px-10 py-2  mb-4">
           <Link to={'/summit'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>Summit</Link>
+          </button>
+            <button className="text-sm bg-[#007BFF] text-white px-10 py-2  mb-4">
+          <Link to={'/conference'} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>Conference</Link>
           </button>
           <button className="text-sm bg-[#EB48D5] text-white px-4 py-2 mb-4">
             <a href="https://www.shemodeltech.com" target="_blank">SHE MODEL TECH</a>
