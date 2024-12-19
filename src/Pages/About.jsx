@@ -1,4 +1,5 @@
 import IMAGE from '../assets/lady.jpg';
+
 const About = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
@@ -34,7 +35,7 @@ const About = () => {
       </section>
 
       {/* Meet Our Founder Section */}
-      <section className="bg-gray-900 py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] py-20">
         <div className="flex flex-col md:flex-row items-center gap-10 lg:mx-20">
           <div className="md:w-1/2 lg:w-1/3 shrink-0">
             <img 
