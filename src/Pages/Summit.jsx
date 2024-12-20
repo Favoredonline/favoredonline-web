@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
-import IMAGE from '../assets/smt.png';
-import LOGO from '../assets/logo.png';
+import LOGO from '../assets/logo.png'; // Using logo for all placeholders
 
 const Summit = () => {
   const [activeTab, setActiveTab] = useState('techtalents');
@@ -27,8 +25,8 @@ const Summit = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src={IMAGE}
-              alt="Tech Summit Demo"
+              src={LOGO}
+              alt="Summit Logo"
               className="w-full max-w-md rounded-xl shadow-lg"
             />
           </div>
@@ -103,7 +101,7 @@ const Summit = () => {
             {[...Array(6)].map((_, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center min-w-[250px]">
                 <img
-                  src={SPEAKER_PLACEHOLDER}
+                  src={LOGO}
                   alt={`Speaker ${index + 1}`}
                   className="w-24 h-24 mx-auto rounded-full mb-4"
                 />
@@ -147,7 +145,7 @@ const Summit = () => {
           {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
             <img
               key={index}
-              src={IMAGE}
+              src={LOGO}
               alt={`Gallery Image ${index + 1}`}
               className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
             />
