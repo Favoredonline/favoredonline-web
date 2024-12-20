@@ -15,7 +15,7 @@ const About = () => {
       </strong> 
       and 
       <strong className="text-[#EB48D5]"> 
-        <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer">She Model Tech</a>
+        <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer"> She Model Tech</a>
       </strong>
     </p>
   </div>
