@@ -11,7 +11,7 @@ const About = () => {
     <p className="text-xl md:text-2xl leading-relaxed lg:leading-loose mx-auto max-w-4xl">
       <strong>Favored Online Inc.</strong> is a tech holding company that facilitates the hosting of Tech Summits, with a focus on inspiring and cultivating the next wave of technology through education. It serves as the parent holding company for two key initiatives: 
       <strong className="text-[#D2AE2F]"> 
-        <a href="https://techtalentscity.com" target="_blank" rel="noopener noreferrer">TechTalents City</a>
+        <a href="https://techtalentscity.com" target="_blank" rel="noopener noreferrer"> TechTalents City</a>
       </strong> 
       and 
       <strong className="text-[#EB48D5]"> 
