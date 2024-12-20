@@ -38,31 +38,31 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative z-10 flex flex-col lg:flex-row justify-center items-center md:mt-8 pb-8 md:pb-16 2xl:pb-24 px-12 xl:px-20">
-        <div className="relative w-[350px] md:w-[600px] lg:w-[890px] h-[280px] md:h-[350px] xl:h-[500px]">
-          <img
-            src={ttc}
-            alt="Tech Talent City"
-            className="absolute w-full h-full object-cover z-0"
-          />
-          <div className="absolute inset-0 flex flex-col justify-end items-center p-8 z-10 bg-black/30">
-            <p className="max-w-xs mt-3 text-center">
-              Inspiring and Equipping the Next Generation of Female Tech Leaders
-            </p>
-          </div>
-        </div>
-        <div className="relative w-[350px] md:w-[600px] lg:w-[890px] h-[280px] md:h-[350px] xl:h-[500px]">
-          <img
-            src={smt}
-            alt="She Model Tech"
-            className="absolute inset-0 w-full h-full object-cover z-0"
-          />
-          <div className="absolute inset-0 flex flex-col justify-end items-center p-8 z-10 bg-black/30">
-            <p className="max-w-xs mt-3 text-center">
-              Cultivating a Thriving Ecosystem for Emerging Tech Professionals
-            </p>
-          </div>
-        </div>
+  <div className="relative w-[350px] md:w-[600px] lg:w-[890px] h-[280px] md:h-[350px] xl:h-[500px] transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-2xl rounded-lg overflow-hidden">
+    <img
+      src={ttc}
+      alt="Tech Talent City"
+      className="absolute w-full h-full object-cover z-0 rounded-lg"
+    />
+    <div className="absolute inset-0 flex flex-col justify-end items-center p-8 z-10 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
+      <p className="max-w-xs mt-3 text-center text-white font-semibold text-lg md:text-xl lg:text-2xl">
+        Inspiring and Equipping the Next Generation of Female Tech Leaders
+      </p>
+    </div>
+  </div>
+  <div className="relative w-[350px] md:w-[600px] lg:w-[890px] h-[280px] md:h-[350px] xl:h-[500px] mt-8 lg:mt-0 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-2xl rounded-lg overflow-hidden">
+    <img
+      src={smt}
+      alt="She Model Tech"
+      className="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
+    />
+    <div className="absolute inset-0 flex flex-col justify-end items-center p-8 z-10 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
+      <p className="max-w-xs mt-3 text-center text-white font-semibold text-lg md:text-xl lg:text-2xl">
+        Cultivating a Thriving Ecosystem for Emerging Tech Professionals
+      </p>
       </div>
+     </div>
+     </div>
     </div>
   );
 };
