@@ -44,7 +44,7 @@ const Sponsors = () => {
             href="#sponsorship" 
             className="inline-block bg-gradient-to-r from-[#E63946] to-[#F4A261] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
-            Explore Sponsorship Packages
+            Sponsor Us
           </a>
         </div>
       </section>
