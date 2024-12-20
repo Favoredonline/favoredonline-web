@@ -25,12 +25,12 @@ const Navbar = () => {
               Home
             </Link>
           </button>
-          <button className="text-sm bg-[#4A90E2] text-white px-6 py-2 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
+          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-6 py-2 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase text-sm">
               About Us
             </Link>
           </button>
-          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-6 py-2 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
+          <button className="text-sm bg-[#4A90E2] text-white px-6 py-2 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
             <Link to={"/summit"} className="font-medium text-white uppercase text-sm">
               Summit
             </Link>
@@ -65,13 +65,13 @@ const Navbar = () => {
             </Link>
           </button>
 
-          <button className="text-sm bg-[#4A90E2] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
+          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-10 py-2 mb-4 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               About Us
             </Link>
           </button>
 
-          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-10 py-2 mb-4 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
+          <button className="text-sm bg-[#4A90E2] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
             <Link to={"/summit"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               Summit
             </Link>
