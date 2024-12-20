@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
 import IMAGE from '../assets/smt.png';
 import LOGO from '../assets/logo.png';
 
 const Summit = () => {
+  const [activeTab, setActiveTab] = useState('techtalents');
+
   return (
     <div className="mx-auto px-6 sm:px-8 lg:px-10 mb-10">
-
-            {/* Hero Section */}
+      {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
@@ -24,10 +26,10 @@ const Summit = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <img 
-              src={IMAGE} 
-              alt="Tech Summit Demo" 
-              className="w-full max-w-md rounded-xl shadow-lg" 
+            <img
+              src={IMAGE}
+              alt="Tech Summit Demo"
+              className="w-full max-w-md rounded-xl shadow-lg"
             />
           </div>
         </div>
@@ -40,17 +42,57 @@ const Summit = () => {
         </div>
       </section>
 
-      {/* Women in Tech Section */}
+      {/* TechTalents Awards and Women in Tech (Tabbed Section) */}
       <section className="bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-6">Women in Tech: Thriving and Leading</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-extrabold mb-6">Empowering Innovation and Leadership</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Empowering women in technology through leadership sessions, networking opportunities, and mentorship programs. Learn how to excel in tech leadership roles and shape the future of innovation.
+            Discover how we celebrate innovation and empower tech talent through recognition, mentorship, and collaboration.
           </p>
         </div>
+        {/* Tab Navigation */}
+        <div className="flex justify-center mb-10">
+          <button
+            className={`px-6 py-3 text-lg font-bold rounded-full ${
+              activeTab === 'techtalents'
+                ? 'bg-white text-[#2563EB]'
+                : 'bg-[#2563EB] text-white'
+            } transition`}
+            onClick={() => setActiveTab('techtalents')}
+          >
+            TechTalents Awards
+          </button>
+          <button
+            className={`px-6 py-3 text-lg font-bold rounded-full ${
+              activeTab === 'womenintech'
+                ? 'bg-white text-[#2563EB]'
+                : 'bg-[#2563EB] text-white'
+            } transition ml-4`}
+            onClick={() => setActiveTab('womenintech')}
+          >
+            Women in Tech
+          </button>
+        </div>
+        {/* Tab Content */}
+        {activeTab === 'techtalents' && (
+          <div className="text-center">
+            <h3 className="text-3xl font-extrabold mb-4">TechTalents Awards for Innovation</h3>
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+              Through <span className="font-semibold">TechTalents City</span>, celebrate groundbreaking projects with awards such as Best Developer, Most Innovative Solution, and Rising Star. Help bring brilliant ideas to life and shape the future of technology.
+            </p>
+          </div>
+        )}
+        {activeTab === 'womenintech' && (
+          <div className="text-center">
+            <h3 className="text-3xl font-extrabold mb-4">Women in Tech: Thriving and Leading</h3>
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+              Empowering women in technology through leadership sessions, networking opportunities, and mentorship programs. Learn how to excel in tech leadership roles and shape the future of innovation.
+            </p>
+          </div>
+        )}
       </section>
 
-        {/* Speakers Section */}
+      {/* Speakers Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Meet Our Speakers</h2>
@@ -62,7 +104,11 @@ const Summit = () => {
           <div className="inline-flex space-x-4">
             {[...Array(6)].map((_, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center min-w-[250px]">
-                <img src={SPEAKER_PLACEHOLDER} alt={`Speaker ${index + 1}`} className="w-24 h-24 mx-auto rounded-full mb-4" />
+                <img
+                  src={SPEAKER_PLACEHOLDER}
+                  alt={`Speaker ${index + 1}`}
+                  className="w-24 h-24 mx-auto rounded-full mb-4"
+                />
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Speaker {index + 1}</h3>
                 <p className="text-gray-600">Expert in Innovation</p>
               </div>
@@ -71,63 +117,27 @@ const Summit = () => {
         </div>
       </section>
 
-      {/* TechTalents Section */}
-      <section className="bg-gradient-to-r from-[#60A5FA] to-[#93C5FD] text-white py-20 px-8 rounded-lg shadow-md my-10">
+      {/* Networking and Sponsors Section */}
+      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-6">TechTalents Awards for Innovation</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Through **TechTalents City**, celebrate groundbreaking projects with awards such as Best Developer, Most Innovative Solution, and Rising Star. Help bring brilliant ideas to life.
+          <h2 className="text-4xl font-extrabold mb-6">Networking and Sponsors</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+            Meet with hiring companies, industry leaders, and sponsors. Participate in our job fair and networking sessions, opening doors to new career opportunities while connecting with tech enthusiasts.
           </p>
+          {/* Sponsors Logos */}
+          <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
+            {[...Array(12)].map((_, index) => (
+              <img
+                key={index}
+                src={LOGO}
+                alt={`Sponsor Logo ${index + 1}`}
+                className="w-32 h-auto object-contain rounded-lg shadow-md"
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Networking and Job Fair Section */}
-<section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
-  <div className="text-center">
-    <h2 className="text-4xl font-extrabold mb-6">Networking and Job Fair</h2>
-    <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-      Meet with hiring companies and industry leaders. Participate in our job fair featuring top tech companies, opening doors to new career opportunities.
-    </p>
-    {/* Sponsors Logos */}
-    <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
-      {[...Array(12)].map((_, index) => (
-        <img
-          key={index}
-          src={LOGO} // Replace `LOGO` with actual or placeholder logo URLs
-          alt={`Sponsor Logo ${index + 1}`}
-          className="w-32 h-auto object-contain rounded-lg shadow-md"
-        />
-      ))}
-    </div>
-  </div>
-</section>
-
-        {/* Gallery Section */}
-      <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md my-10">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">Experience the highlights from past events through our exclusive gallery.</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-            <img 
-              key={index} 
-              src={IMAGE} 
-              alt={`Gallery Image ${index + 1}`} 
-              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
-            />
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <a
-            href="#gallery"
-            className="inline-block bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            View More Images
-          </a>
-        </div>
-      </section>
-      
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
@@ -143,7 +153,6 @@ const Summit = () => {
           </a>
         </div>
       </section>
-
     </div>
   );
 };
