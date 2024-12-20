@@ -16,7 +16,7 @@ const About = () => {
       and 
       <strong className="text-[#EB48D5]"> 
         <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer">She Model Tech</a>
-      </strong>. These initiatives are focused on innovation, education, and empowerment.
+      </strong>
     </p>
   </div>
 </section>
