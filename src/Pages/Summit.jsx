@@ -12,7 +12,7 @@ const Summit = () => {
           <div className="text-center md:text-left">
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Favored Online Tech Summit</h1>
             <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto md:mx-0">
-              A two-day event celebrating leadership, innovation, and collaboration. Join us for interactive panel discussions, inspiring leadership talks, prestigious community awards, and exclusive insights from industry experts. 
+              A celebration of achievements, recognizing individuals and teams who have made outstanding contributions in technology and innovation. Join us for panel discussions, leadership talks, awards, and insights from industry experts.
             </p>
             <div className="mt-8">
               <a
@@ -38,7 +38,7 @@ const Summit = () => {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Theme for 2025</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            **"Leading with Innovation: Building a Collaborative Future"**. This year’s theme focuses on driving leadership, fostering innovation, and empowering talent from novice to expert within the tech ecosystem.
+            **"Leading with Innovation: Building a Collaborative Future"**. This year’s theme emphasizes creativity, collaboration, and empowering talent from novice to expert within the tech ecosystem.
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ const Summit = () => {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Women in Tech: Thriving and Leading</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            A powerful session focused on amplifying women’s leadership in tech. Join us for an engaging panel discussion and a keynote address from a leading woman in technology. Explore strategies, insights, and practical guidance on thriving as a woman in tech leadership roles.
+            Empowering women in technology through leadership sessions, hands-on training, and mentorship opportunities. Explore strategies and insights to elevate women’s roles in tech leadership and innovation.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ const Summit = () => {
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">TechTalents Awards for Innovation</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Recognizing groundbreaking projects from TechTalents City. Contributors apply for awards through the TechTalents City dashboard. Categories include Best Product Owner, Best Developer, and Most Innovative Project.
+            Recognizing groundbreaking projects through TechTalents City. Celebrate innovation with awards like Best Product Owner, Best Developer, and Most Innovative Project.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ const Summit = () => {
       <section className="bg-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">Our Esteemed Sponsors</h2>
-          <p className="text-lg text-gray-600">We are proud to be supported by organizations committed to advancing innovation, excellence, and opportunity in the tech industry.</p>
+          <p className="text-lg text-gray-600">Supported by organizations committed to advancing innovation, excellence, and opportunity in the tech industry.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4">
           {[...Array(8)].map((_, index) => (
