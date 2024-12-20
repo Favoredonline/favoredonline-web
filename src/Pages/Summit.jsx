@@ -8,11 +8,28 @@ const Summit = () => {
       
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
-        <div className="text-center">
-          <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Favored Online Summit</h1>
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
-            A two-day event celebrating leadership, innovation, and collaboration. Join us for interactive panel discussions, inspiring leadership talks, prestigious community awards, and exclusive insights from industry experts. 
-          </p>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Favored Online Tech Summit</h1>
+            <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto md:mx-0">
+              A two-day event celebrating leadership, innovation, and collaboration. Join us for interactive panel discussions, inspiring leadership talks, prestigious community awards, and exclusive insights from industry experts. 
+            </p>
+            <div className="mt-8">
+              <a
+                href="#register"
+                className="inline-block bg-white text-[#0F2027] text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+              >
+                Register for the Summit
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src={IMAGE} 
+              alt="Tech Summit Demo" 
+              className="w-full max-w-md rounded-xl shadow-lg" 
+            />
+          </div>
         </div>
       </section>
 
@@ -45,6 +62,14 @@ const Summit = () => {
               <strong>Date:</strong> March 10-12, 2025<br />
               <strong>Location:</strong> Hybrid Event (In-Person & Online)
             </p>
+            <div className="mt-8">
+              <a
+                href="#register"
+                className="inline-block bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+              >
+                Register for the Summit
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -56,21 +81,6 @@ const Summit = () => {
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
             A powerful session focused on amplifying women’s leadership in tech. Join us for an engaging panel discussion and a keynote address from a leading woman in technology. Explore strategies, insights, and practical guidance on thriving as a woman in tech leadership roles.
           </p>
-        </div>
-      </section>
-
-      {/* Speaker Carousel */}
-      <section className="py-20 bg-gray-50">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Meet Our Speakers</h2>
-        </div>
-        <div id="summit-carousel" className="carousel flex justify-center overflow-x-auto gap-6 px-4">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-40 h-40 flex flex-col items-center bg-gray-200 rounded-full shadow-md flex-shrink-0">
-              <img src={SPEAKER_PLACEHOLDER} alt="Speaker" className="w-full h-full rounded-full object-cover" />
-              <p className="text-center mt-2 text-sm font-semibold">Speaker {index + 1}</p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -107,13 +117,13 @@ const Summit = () => {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Register Now</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            Don’t miss the Favored Online Summit. Secure your spot to gain insights, network with leaders, and celebrate innovation and leadership.
+            Don’t miss the Favored Online Tech Summit. Secure your spot to gain insights, network with leaders, and celebrate innovation and leadership.
           </p>
           <a
             href="#register"
             className="inline-block bg-white text-[#0F2027] text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
-            Register for Favored Online Summit
+            Register for Favored Online Tech Summit
           </a>
         </div>
       </section>
