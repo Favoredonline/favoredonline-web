@@ -123,7 +123,7 @@ const Summit = () => {
             href="#register"
             className="inline-block bg-white text-[#0F2027] text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
-            Register for Favored Online Tech Summit
+            Register for the Summit
           </a>
         </div>
       </section>
