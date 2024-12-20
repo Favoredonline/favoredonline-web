@@ -42,15 +42,14 @@ const Summit = () => {
         </div>
       </section>
 
-      {/* TechTalents Awards and Women in Tech (Tabbed Section) */}
-      <section className="bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+      {/* TechTalents Awards and Women in Tech Section */}
+      <section className="bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md border-t border-gray-300">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-extrabold mb-6">Empowering Innovation and Leadership</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
             Discover how we celebrate innovation and empower tech talent through recognition, mentorship, and collaboration.
           </p>
         </div>
-        {/* Tab Navigation */}
         <div className="flex justify-center mb-10">
           <button
             className={`px-6 py-3 text-lg font-bold rounded-full ${
@@ -73,7 +72,6 @@ const Summit = () => {
             Women in Tech
           </button>
         </div>
-        {/* Tab Content */}
         {activeTab === 'techtalents' && (
           <div className="text-center">
             <h3 className="text-3xl font-extrabold mb-4">TechTalents Awards for Innovation</h3>
@@ -93,7 +91,7 @@ const Summit = () => {
       </section>
 
       {/* Speakers Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md border-t border-gray-300">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Meet Our Speakers</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
@@ -117,14 +115,13 @@ const Summit = () => {
         </div>
       </section>
 
-      {/* Networking and Sponsors Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+      {/* Networking Section */}
+      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md border-t border-gray-300">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Networking and Sponsors</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
             Meet with hiring companies, industry leaders, and sponsors. Participate in our job fair and networking sessions, opening doors to new career opportunities while connecting with tech enthusiasts.
           </p>
-          {/* Sponsors Logos */}
           <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
             {[...Array(12)].map((_, index) => (
               <img
@@ -138,8 +135,8 @@ const Summit = () => {
         </div>
       </section>
 
-        {/* Gallery Section */}
-      <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md my-10">
+      {/* Gallery Section */}
+      <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md border-t border-gray-300">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -156,18 +153,10 @@ const Summit = () => {
             />
           ))}
         </div>
-        <div className="text-center mt-8">
-          <a
-            href="#gallery"
-            className="inline-block bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            View More Images
-          </a>
-        </div>
       </section>
-      
+
       {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md border-t border-gray-300">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Join Us</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
