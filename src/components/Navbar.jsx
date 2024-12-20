@@ -25,7 +25,7 @@ const Navbar = () => {
               Home
             </Link>
           </button>
-          <button className="text-sm bg-[#81bb36] text-white px-6 py-2 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
+          <button className="text-sm bg-[#4A90E2] text-white px-6 py-2 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase text-sm">
               About Us
             </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </Link>
           </button>
 
-          <button className="text-sm bg-[#81bb36] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
+          <button className="text-sm bg-[#4A90E2] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#357ABD] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               About Us
             </Link>
