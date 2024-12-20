@@ -9,10 +9,14 @@ const About = () => {
         <div className="text-center">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-8">About Favored Online</h1>
           <p className="text-xl md:text-2xl leading-relaxed mx-auto max-w-3xl">
-            <strong>Favored Online Inc.</strong> serves as the parent holding company for two key initiatives: 
-            <strong className="text-[#D2AE2F]"> TechTalents City </strong> 
+            <strong>Favored Online Inc.</strong> is a tech holding company that facilitates the hosting of Tech Summits, with a focus on inspiring and cultivating the next wave of technology through education. It serves as the parent holding company for two key initiatives: 
+            <strong className="text-[#D2AE2F]"> 
+              <a href="https://techtalentscity.com" target="_blank" rel="noopener noreferrer">TechTalents City</a> 
+            </strong> 
             and 
-            <strong className="text-[#EB48D5]"> She Model Tech.</strong> 
+            <strong className="text-[#EB48D5]"> 
+              <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer">She Model Tech</a> 
+            </strong>. 
             These initiatives are focused on innovation, education, and empowerment.
           </p>
         </div>
