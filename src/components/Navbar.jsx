@@ -37,7 +37,7 @@ const Navbar = () => {
           </button>
           <button className="text-sm bg-gradient-to-r from-[#F5B700] via-[#F29339] to-[#F25C54] text-white px-6 py-2 rounded-lg hover:from-[#f2a63c] hover:via-[#f07c40] hover:to-[#f05030] transition-colors duration-200">
             <Link to={"/sponsors"} className="font-medium text-white uppercase text-sm">
-              Sponsors
+              Support
             </Link>
           </button>
         </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           <button className="text-sm bg-gradient-to-r from-[#F5B700] via-[#F29339] to-[#F25C54] text-white px-10 py-2 mb-4 rounded-lg hover:from-[#f2a63c] hover:via-[#f07c40] hover:to-[#f05030] transition-colors duration-200">
             <Link to={"/sponsors"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
-              Sponsors
+              Support
             </Link>
           </button>
         </div>
