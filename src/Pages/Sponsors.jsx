@@ -49,6 +49,35 @@ const Sponsors = () => {
         </div>
       </section>
 
+      {/* How Sponsor Funds Are Used */}
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold mb-6">Where Your Sponsorship Makes an Impact</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            Your sponsorship directly fuels transformative initiatives aimed at shaping the future of technology. 
+            By partnering with the <strong className="text-[#D2AE2F]">Favored Online Tech Summit</strong>, you become a force for change in two key areas:
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 px-4 mt-12">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h3 className="text-3xl font-bold text-[#0F2027] mb-4">👩‍💻 Empowering Women in Tech</h3>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Funds are used to support **She Model Tech**, a platform dedicated to providing women with leadership development, hands-on tech skills, and access to mentorship opportunities. 
+              Through your sponsorship, we empower women to become trailblazers and leaders in the tech industry.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h3 className="text-3xl font-bold text-[#0F2027] mb-4">🚀 Awarding Innovative Projects</h3>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Through **TechTalents City**, we recognize and award innovative projects from our global community of contributors. 
+              From groundbreaking solutions to impactful digital products, your support provides the resources to **award, support, and develop new ventures** that could change the world.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action at the Bottom */}
       <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
         <div className="text-center">
