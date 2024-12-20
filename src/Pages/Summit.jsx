@@ -5,8 +5,8 @@ import LOGO from '../assets/logo.png';
 const Summit = () => {
   return (
     <div className="mx-auto px-6 sm:px-8 lg:px-10 mb-10">
-      
-      {/* Hero Section */}
+
+            {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
@@ -30,6 +30,13 @@ const Summit = () => {
               className="w-full max-w-md rounded-xl shadow-lg" 
             />
           </div>
+        </div>
+        {/* Theme for 2025 Section */}
+        <div className="mt-16 text-center">
+          <h2 className="text-4xl font-extrabold mb-6">Theme for 2025</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            <span className="italic font-semibold">"Leading with Innovation: Building a Collaborative Future"</span>. This year’s theme emphasizes creativity, collaboration, and empowering talent from novice to expert within the tech ecosystem.
+          </p>
         </div>
       </section>
 
