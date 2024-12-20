@@ -91,26 +91,26 @@ const Summit = () => {
         </div>
       </section>
 
-          {/* Networking and Job Fair Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-6">Networking and Job Fair</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            Meet with hiring companies and industry leaders. Participate in our job fair featuring top tech companies, opening doors to new career opportunities.
-          </p>
-          {/* Sponsors Logos */}
-          <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
-            {[LOGO, IMAGE].map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt={`Sponsor Logo ${index + 1}`}
-                className="w-40 h-auto object-contain rounded-lg shadow-md"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Networking and Job Fair Section */}
+<section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+  <div className="text-center">
+    <h2 className="text-4xl font-extrabold mb-6">Networking and Job Fair</h2>
+    <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+      Meet with hiring companies and industry leaders. Participate in our job fair featuring top tech companies, opening doors to new career opportunities.
+    </p>
+    {/* Sponsors Logos */}
+    <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
+      {[...Array(12)].map((_, index) => (
+        <img
+          key={index}
+          src={LOGO} // Replace `LOGO` with actual or placeholder logo URLs
+          alt={`Sponsor Logo ${index + 1}`}
+          className="w-32 h-auto object-contain rounded-lg shadow-md"
+        />
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Gallery Section */}
       <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md my-10">
