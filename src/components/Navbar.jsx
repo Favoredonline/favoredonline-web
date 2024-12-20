@@ -21,11 +21,16 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="space-x-4 hidden md:block">
           <button className="text-sm bg-[#81bb36] text-white px-6 py-2 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
+            <Link to={"/"} className="font-medium text-white uppercase text-sm">
+              Home
+            </Link>
+          </button>
+          <button className="text-sm bg-[#81bb36] text-white px-6 py-2 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase text-sm">
               About Us
             </Link>
           </button>
-          <button className="text-sm bg-[#EB48D5] text-white px-6 py-2 rounded-lg hover:bg-[#d63ec0] transition-colors duration-200">
+          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-6 py-2 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
             <Link to={"/summit"} className="font-medium text-white uppercase text-sm">
               Summit
             </Link>
@@ -60,20 +65,29 @@ const Navbar = () => {
           </div>
 
           <button className="text-sm bg-[#81bb36] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
+            <Link to={"/"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
+              Home
+            </Link>
+          </button>
+
+          <button className="text-sm bg-[#81bb36] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#6aa92b] transition-colors duration-200">
             <Link to={"/about"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               About Us
             </Link>
           </button>
-          <button className="text-sm bg-[#EB48D5] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#d63ec0] transition-colors duration-200">
+
+          <button className="text-sm bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white px-10 py-2 mb-4 rounded-lg hover:from-[#152D35] hover:via-[#2C5364] hover:to-[#3A6A7D] transition-colors duration-200">
             <Link to={"/summit"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               Summit
             </Link>
           </button>
+
           <button className="text-sm bg-[#D2AE2F] text-white px-10 py-2 mb-4 rounded-lg hover:bg-[#b29526] transition-colors duration-200">
             <Link to={"/conference"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               Conference
             </Link>
           </button>
+
           <button className="text-sm bg-gradient-to-r from-[#F5B700] via-[#F29339] to-[#F25C54] text-white px-10 py-2 mb-4 rounded-lg hover:from-[#f2a63c] hover:via-[#f07c40] hover:to-[#f05030] transition-colors duration-200">
             <Link to={"/sponsors"} className="font-medium text-white uppercase" onClick={toggleMobileMenu}>
               Sponsors
