@@ -7,7 +7,7 @@ const Summit = () => {
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#EB48D5] to-[#C037A9] text-white py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
         <div className="text-center">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Favored Online Summit</h1>
           <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
@@ -17,10 +17,10 @@ const Summit = () => {
       </section>
 
       {/* Theme Section */}
-      <section className="bg-white py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Theme for 2025</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-600">
+          <h2 className="text-4xl font-extrabold mb-6">Theme for 2025</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
             **"Leading with Innovation: Building a Collaborative Future"**. This year’s theme focuses on driving leadership, fostering innovation, and empowering talent from novice to expert within the tech ecosystem.
           </p>
         </div>
@@ -50,7 +50,7 @@ const Summit = () => {
       </section>
 
       {/* Women in Tech Section */}
-      <section className="bg-gradient-to-r from-[#C037A9] to-[#EB48D5] text-white py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Women in Tech: Thriving and Leading</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ const Summit = () => {
       </section>
 
       {/* Award for Innovation Section */}
-      <section className="bg-gradient-to-r from-[#C037A9] to-[#EB48D5] text-white py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold mb-6">TechTalents Awards for Innovation</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
@@ -103,7 +103,7 @@ const Summit = () => {
       </section>
 
       {/* Register Section */}
-      <section className="bg-gradient-to-r from-[#D2AE2F] to-[#A18634] text-white py-20">
+      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] text-white py-20">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Register Now</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
@@ -111,7 +111,7 @@ const Summit = () => {
           </p>
           <a
             href="#register"
-            className="inline-block bg-white text-[#C037A9] text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+            className="inline-block bg-white text-[#0F2027] text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
             Register for Favored Online Summit
           </a>
