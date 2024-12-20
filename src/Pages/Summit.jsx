@@ -1,16 +1,16 @@
 import SPEAKER_PLACEHOLDER from '../assets/lady.jpg';
 import IMAGE from '../assets/smt.png';
 
-const FavoredOnlineSummit = () => {
+const Summit = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#EB48D5] to-[#C037A9] text-white py-20">
         <div className="text-center">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-6">Favored Online Summit</h1>
           <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
-            A two-day experience of leadership, innovation, and technology. Join us for inspiring panel discussions, award ceremonies, networking opportunities, and showcases of groundbreaking projects. 
-            This is your moment to connect, learn, and lead.
+            A two-day event celebrating leadership, innovation, and collaboration. Join us for interactive panel discussions, groundbreaking project showcases, prestigious award ceremonies, and the ultimate networking experience with recruiters, industry leaders, and hiring companies.
           </p>
         </div>
       </section>
@@ -21,18 +21,18 @@ const FavoredOnlineSummit = () => {
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Key Highlights</h3>
             <ul className="text-lg text-gray-600 list-disc list-inside">
-              <li>Leadership Talks & Panel Discussions</li>
+              <li>Leadership Talks & Engaging Panel Discussions</li>
               <li>Showcase of Viable and Innovative Projects</li>
-              <li>Tech Talks on Emerging Technologies</li>
-              <li>Award Ceremony for TechTalents Community Members</li>
-              <li>Job Fair and Exclusive Networking Opportunities</li>
+              <li>Award Ceremony to Recognize Community Excellence</li>
+              <li>Networking with Recruiters, Speakers, and Industry Experts</li>
+              <li>Job Fair for Exclusive Career Opportunities</li>
             </ul>
           </div>
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Details</h3>
             <p className="text-lg text-gray-600">
               <strong>Date:</strong> March 10-12, 2025<br />
-              <strong>Location:</strong> Lagos, Nigeria & Online
+              <strong>Location:</strong> Hybrid Event (In-Person & Online)
             </p>
           </div>
         </div>
@@ -56,9 +56,9 @@ const FavoredOnlineSummit = () => {
       {/* Award Section */}
       <section className="bg-gradient-to-r from-[#C037A9] to-[#EB48D5] text-white py-20">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold mb-6">TechTalents Awards</h2>
+          <h2 className="text-4xl font-extrabold mb-6">TechTalents Community Awards</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Celebrate the achievements of our incredible community members. From Novice-to-Expert transformations to Best Tech Leads and Product Owners, join us as we recognize excellence and innovation.
+            Join us as we celebrate and recognize excellence within our TechTalents City community. From transformative journeys to leadership excellence, see how talent evolves from novice to expert.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 px-4">
@@ -85,7 +85,7 @@ const FavoredOnlineSummit = () => {
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Networking & Job Fair</h2>
           <p className="text-lg text-gray-600">
-            Connect with recruiters, industry leaders, and company representatives. Get hired, find a mentor, and form lasting professional relationships.
+            Meet, connect, and build lasting relationships with recruiters, speakers, and company representatives. Our job fair is your gateway to new roles and fresh opportunities.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ const FavoredOnlineSummit = () => {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold mb-6">Register Now</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            Don’t miss your chance to be part of the Favored Online Summit. Gain insights, get inspired, and connect with industry leaders.
+            Don't miss your chance to be part of the Favored Online Summit. Get ready to network, learn, and grow in a transformative environment for leaders, innovators, and future change-makers.
           </p>
           <a
             href="#register"
@@ -110,7 +110,7 @@ const FavoredOnlineSummit = () => {
       <section className="bg-gray-50 py-20">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
-          <p className="text-lg text-gray-600">Explore moments from our past events through our exclusive photo gallery.</p>
+          <p className="text-lg text-gray-600">Take a look at moments from our past events through our exclusive photo gallery.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
@@ -135,4 +135,4 @@ const FavoredOnlineSummit = () => {
   );
 };
 
-export default FavoredOnlineSummit;
+export default Summit;
