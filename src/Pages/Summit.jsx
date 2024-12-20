@@ -138,6 +138,34 @@ const Summit = () => {
         </div>
       </section>
 
+        {/* Gallery Section */}
+      <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md my-10">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Experience the highlights from past events through our exclusive gallery.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+            <img
+              key={index}
+              src={IMAGE}
+              alt={`Gallery Image ${index + 1}`}
+              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+            />
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="#gallery"
+            className="inline-block bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
+            View More Images
+          </a>
+        </div>
+      </section>
+      
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
