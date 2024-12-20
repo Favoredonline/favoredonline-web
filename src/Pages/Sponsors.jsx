@@ -44,7 +44,7 @@ const Sponsors = () => {
             href="#sponsorship" 
             className="inline-block bg-gradient-to-r from-[#E63946] to-[#F4A261] text-white text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:scale-105 transition-transform"
           >
-            Sponsor Us
+            Explore Sponsorship Packages
           </a>
         </div>
       </section>
@@ -73,6 +73,53 @@ const Sponsors = () => {
               Through **TechTalents City**, we identify and celebrate groundbreaking projects. Categories like Best Developer, Most Innovative Solution, and Rising Star provide recognition and support for the brightest minds in tech to bring their ideas to life.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Networking and Job Fair */}
+      <section className="bg-gradient-to-r from-[#1D3557] to-[#457B9D] text-white py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold mb-6">Networking and Job Fair</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            Meet and connect with hiring companies and tech leaders. Participate in our job fair featuring top tech companies, opening doors to incredible career opportunities.
+          </p>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="bg-gray-100 py-20">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">Experience memorable moments from past events through our exclusive photo gallery.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+            <img 
+              key={index} 
+              src={IMAGE} 
+              alt={`Gallery Image ${index + 1}`} 
+              className="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Speakers Section */}
+      <section className="bg-gradient-to-r from-[#1D3557] via-[#457B9D] to-[#A8DADC] text-white py-20">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold mb-6">Meet Our Speakers</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            Get inspired by a lineup of industry leaders and innovators sharing their insights and experiences in technology.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 mt-12">
+          {[...Array(6)].map((_, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img src={IMAGE} alt={`Speaker ${index + 1}`} className="w-24 h-24 mx-auto rounded-full mb-4" />
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Speaker {index + 1}</h3>
+              <p className="text-gray-600">Tech Innovator and Leader</p>
+            </div>
+          ))}
         </div>
       </section>
 
