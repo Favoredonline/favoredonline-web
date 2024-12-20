@@ -32,9 +32,9 @@ const Hero = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center pt-16 pb-12 md:pb-20">
           <h1 className="font-bold tracking-tight text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
-            Leading the Future of {' '} <br />
-            <span className="text-[#EB48D5]">Tech</span> through{' '}
-            <span className="text-[#D2AE2F]">Education</span>
+            LEADING THE FUTURE OF {' '} <br />
+            <span className="text-[#EB48D5]">TECH</span> THROUGH{' '}
+            <span className="text-[#D2AE2F]">EDUCATION</span>
           </h1>
         </div>
       </div>
