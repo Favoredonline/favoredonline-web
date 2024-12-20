@@ -40,16 +40,6 @@ const Summit = () => {
         </div>
       </section>
 
-      {/* Theme Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-6">Theme for 2025</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            **"Leading with Innovation: Building a Collaborative Future"**. This year’s theme emphasizes creativity, collaboration, and empowering talent from novice to expert within the tech ecosystem.
-          </p>
-        </div>
-      </section>
-
       {/* Women in Tech Section */}
       <section className="bg-gradient-to-r from-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
