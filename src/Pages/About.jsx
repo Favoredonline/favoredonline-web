@@ -4,23 +4,23 @@ const About = () => {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 mb-10">
       
-      {/* About Section */}
-      <section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
-        <div className="text-center">
-          <h1 className="text-4xl lg:text-5xl font-extrabold mb-8">About Favored Online</h1>
-          <p className="text-xl md:text-2xl leading-relaxed mx-auto max-w-3xl">
-            <strong>Favored Online Inc.</strong> is a tech holding company that facilitates the hosting of Tech Summits, with a focus on inspiring and cultivating the next wave of technology through education. It serves as the parent holding company for two key initiatives: 
-            <strong className="text-[#D2AE2F]"> 
-              <a href="https://techtalentscity.com" target="_blank" rel="noopener noreferrer">TechTalents City</a> 
-            </strong> 
-            and 
-            <strong className="text-[#EB48D5]"> 
-              <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer">She Model Tech</a> 
-            </strong>. 
-            These initiatives are focused on innovation, education, and empowerment.
-          </p>
-        </div>
-      </section>
+{/* About Section */}
+<section className="bg-gradient-to-r from-[#0F2027] via-[#203A43] to-[#2C5364] text-white py-20">
+  <div className="text-center px-4">
+    <h1 className="text-4xl lg:text-5xl font-extrabold mb-10 leading-tight">About Favored Online</h1>
+    <p className="text-xl md:text-2xl leading-relaxed lg:leading-loose mx-auto max-w-4xl">
+      <strong>Favored Online Inc.</strong> is a tech holding company that facilitates the hosting of Tech Summits, with a focus on inspiring and cultivating the next wave of technology through education. It serves as the parent holding company for two key initiatives: 
+      <strong className="text-[#D2AE2F]"> 
+        <a href="https://techtalentscity.com" target="_blank" rel="noopener noreferrer">TechTalents City</a>
+      </strong> 
+      and 
+      <strong className="text-[#EB48D5]"> 
+        <a href="https://shemodeltech.com" target="_blank" rel="noopener noreferrer">She Model Tech</a>
+      </strong>. These initiatives are focused on innovation, education, and empowerment.
+    </p>
+  </div>
+</section>
+
 
       {/* Mission and Vision Section */}
       <section className="grid md:grid-cols-2 gap-8 md:gap-5 lg:gap-10 my-16">
