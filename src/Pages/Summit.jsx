@@ -60,6 +60,27 @@ const Summit = () => {
         </div>
       </section>
 
+        {/* Speakers Section */}
+      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold mb-6">Meet Our Speakers</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            Be inspired by leading industry experts and innovators sharing their insights and experiences.
+          </p>
+        </div>
+        <div className="overflow-x-scroll whitespace-nowrap">
+          <div className="inline-flex space-x-4">
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center min-w-[250px]">
+                <img src={SPEAKER_PLACEHOLDER} alt={`Speaker ${index + 1}`} className="w-24 h-24 mx-auto rounded-full mb-4" />
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">Speaker {index + 1}</h3>
+                <p className="text-gray-600">Expert in Innovation</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* TechTalents Section */}
       <section className="bg-gradient-to-r from-[#60A5FA] to-[#93C5FD] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
@@ -91,8 +112,7 @@ const Summit = () => {
         </div>
       </section>
 
-
-      {/* Gallery Section */}
+        {/* Gallery Section */}
       <section className="bg-gray-100 py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Gallery</h2>
@@ -117,28 +137,7 @@ const Summit = () => {
           </a>
         </div>
       </section>
-
-      {/* Speakers Section */}
-      <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
-        <div className="text-center">
-          <h2 className="text-4xl font-extrabold mb-6">Meet Our Speakers</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-            Be inspired by leading industry experts and innovators sharing their insights and experiences.
-          </p>
-        </div>
-        <div className="overflow-x-scroll whitespace-nowrap">
-          <div className="inline-flex space-x-4">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center min-w-[250px]">
-                <img src={SPEAKER_PLACEHOLDER} alt={`Speaker ${index + 1}`} className="w-24 h-24 mx-auto rounded-full mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Speaker {index + 1}</h3>
-                <p className="text-gray-600">Expert in Innovation</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#60A5FA] text-white py-20 px-8 rounded-lg shadow-md my-10">
         <div className="text-center">
@@ -154,6 +153,7 @@ const Summit = () => {
           </a>
         </div>
       </section>
+
     </div>
   );
 };
