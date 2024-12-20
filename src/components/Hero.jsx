@@ -32,13 +32,10 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center pt-16 pb-12 md:pb-20">
           <h1 className="font-bold tracking-tight text-xl md:text-4xl lg:text-5xl xl:text-6xl">
-          Advancing Education Through {' '} <br />
-            <span className="text-[#EB48D5]">Innovative Solutions</span> and{' '}
-            <span className="text-[#D2AE2F]">Technologies</span>
+          Leading the Future of {' '} <br />
+            <span className="text-[#EB48D5]">Tech</span> through{' '}
+            <span className="text-[#D2AE2F]">Education</span>
           </h1>
-          <p className="mt-6 text-sm md:text-xl">
-          Leading the Future of Tech through Education
-          </p>
         </div>
       </div>
       <div className="relative z-10 flex flex-col lg:flex-row justify-center items-center md:mt-8 pb-8 md:pb-16 2xl:pb-24 px-12 xl:px-20">
